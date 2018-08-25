@@ -13,9 +13,9 @@
 	export default{
 		name:'Home',
 		components:{
-		HomeHeader,
-		HomeSwiper,
-		HomeIcons
+			HomeHeader,
+			HomeSwiper,
+			HomeIcons
 		}
 	}
 </script>
