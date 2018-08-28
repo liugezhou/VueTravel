@@ -4,7 +4,8 @@
 			tag="div"
 			class="header-abs"
 			to="/"
-			v-show="showAbs">
+			v-show="showAbs"
+			ref="top">
 			<div class="iconfont header-abs-back">&#xe624;</div>
 		</router-link>
 		
@@ -34,7 +35,6 @@
 		methods:{
 			handleScroll:function(){
 				const top =document.documentElement.scrollTop
-				console.log(top)
 				if(top>45){
 					let opacity =top/140
 					opacity =opacity > 1 ?1:opacity
@@ -49,6 +49,9 @@
 		},
 		activated (){
 			window.addEventListener('scroll',this.handleScroll)
+		},
+		deactivated () {
+			window.removeEventListener('scroll',this.handleScroll)
 		}
 	}
 </script>
