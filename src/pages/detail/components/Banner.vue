@@ -4,7 +4,7 @@
 			<img class="banner-img" :src= "bannerImg" />
 			<div class="banner-info">
 				<div class="banner-title">{{sightName}}</div>
-				<div class="banner-number"><span class="iconfont banner-icon">&#xe674;;</span>{{this.gallaryImgs.length}}</div>
+				<div class="banner-number"><span class="iconfont banner-icon">&#xe674;</span>{{this.gallaryImgs.length}}</div>
 			</div>
 		</div>
 		<fade-animation>
