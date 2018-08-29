@@ -60,10 +60,10 @@ export default {
 		.wrapper
 			width:100%
 			height:0
-			padding-bottom:80%
+			padding-bottom:100%
 			.gallary-image
 				width:100%
 			.swiper-pagination
 				color:#fff
-				bottom:-2rem;
+				bottom:-1rem
 </style>
